@@ -51,8 +51,8 @@ print('\n==================================================================\n')
 
 
 # Pivot by specific index, specific values and specific columns, applying a functions
-df_4 = cloneDF(mergeRatings)
-df_4 = df_4.pivot_table(index=['movie_id', 'title'], values=['rating'], columns=['gender'], aggfunc=[np.mean],
+modifdf_4 = cloneDF(mergeRatings)
+modifdf_4 = df_4.pivot_table(index=['movie_id', 'title'], values=['rating'], columns=['gender'], aggfunc=[np.mean],
                         fill_value=-1, margins=True)
 print('Columns(movie_id + title) to Index and avg rating applied by gender \n%s' %
       df_4[:5])
