@@ -10,7 +10,7 @@ users = pd.read_csv('dataSet/users.txt', engine='python',
                     sep='::', header=None, names=userHeader)
 
 movieHeader = ['movie_id', 'title', 'genders']
-movies = pd.read_csv('dataSet/movies.txt', engine='python',
+movies_m = pd.read_csv('dataSet/movies.txt', engine='python',
                      sep='::', header=None, names=movieHeader)
 
 ratingHeader = ['user_id', 'movie_id', 'rating', 'timestamp']
